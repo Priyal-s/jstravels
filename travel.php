@@ -9,51 +9,147 @@
 
     <title>Travelx</title>
 </head>
+<style>
+
+
+nav {
+    display: flex;
+    flex-direction: column; /* Stack items for smaller screens */
+    align-items: center; /* Center items */
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.bars {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: none; /* Hide menu by default */
+}
+
+.menu.active {
+    display: block; /* Show menu when active */
+}
+
+.signup-login {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.content {
+    padding: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 10px 15px;
+    background-color: #007BFF; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row; /* Horizontal layout on larger screens */
+        justify-content: space-between; /* Space between items */
+    }
+    
+    .menu {
+        display: flex; /* Show menu items on larger screens */
+    }
+    
+    .menu ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .menu ul li {
+        margin: 0 15px; /* Space between menu items */
+    }
+    
+    .signup-login {
+        margin-left: auto; /* Push to the right */
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        flex-direction: column; /* Stack menu items */
+        align-items: center;
+        width: 100%;
+    }
+    
+    .menu.active {
+        display: flex; /* Show menu when active */
+    }
+}
+</style>
 
 <body>
     <!--home section start here-->
     <section class="home">
-        <div class="home-box">
-            <nav>
-                <div class="logo bars">
-                    <div class="bar">
-                        <i class="fa fa-bars"></i>
-                    </div>
-                    <h3>Travelx</h3>
+    <div class="home-box">
+        <nav>
+            <div class="logo bars">
+                <div class="bar">
+                    <i class="fa fa-bars"></i>
                 </div>
-                <div class="menu ">
-                    <div class="close">
-                        <i class="fa fa-close"></i>
-                    </div>
+                <h3>Travelx</h3>
+            </div>
+            <div class="menu">
+                <div class="close">
+                    <i class="fa fa-close"></i>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Travel Packages</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="signup-login">
+                <a href="#">Sign Up</a>
+                <a href="#">Login</a>
+            </div>
+        </nav>
 
-                    <ul>
-                        <li> <a href="#">Home</a></li>
-                        <li> <a href="#">about</a></li>
-                        <li> <a href="#"> travel packages</a></li>
-                        <li> <a href="#">destination</a></li>
-                        <li> <a href="#">careers</a></li>
-                    </ul>
-                </div>
-                <div class="signup-login">
-                    <a href="#">sign-up</a>
-                    <a href="#">Login</a>
-                </div>
-            </nav>
-
-
-            <div class="content">
-                <h5>Travelx</h5>
-                <h1>let's embark on your dream journey </h1>
-                <p>discover inspring destation , create unfgettable memories, and travel with confidence - adventure
-                    start adventure starts here</p>
-                <div class="search">
-                    <i class="fa fa-search"></i>
-                    <input type="text" placeholder=" your journey begins  with a search...">
-                    <button>search</button>
-                </div>
+        <div class="content">
+            <h5>Travelx</h5>
+            <h1>Let's embark on your dream journey</h1>
+            <p>Discover inspiring destinations, create unforgettable memories, and travel with confidence - adventure starts here.</p>
+            <div class="search">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Your journey begins with a search...">
+                <button>Search</button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     <!-- home section end here -->
 
     <!-- travel section starts here  -->
