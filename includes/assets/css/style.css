@@ -78,6 +78,8 @@ section.home{
     display: flex;
     border-radius: .7rem;
     position: relative;
+    flex-direction: column; /* Stack items for smaller screens */
+    margin-bottom: 20px;
 }
 .home .home-box nav .logo{
     display: flex;
@@ -89,7 +91,8 @@ section.home{
     font-size: 1.35rem;
     color: var(--white-color);
     cursor: pointer;
-    display: none;
+    display: flex;
+    align-items: center;
 }
 
 .home .home-box nav .logo .bar:hover{

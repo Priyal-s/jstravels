@@ -12,26 +12,9 @@
 <style>
 
 
-nav {
-    display: flex;
-    flex-direction: column; /* Stack items for smaller screens */
-    align-items: center; /* Center items */
-    margin-bottom: 20px;
-}
 
-.logo {
-    display: flex;
-    align-items: center;
-}
 
-.bars {
-    display: flex;
-    align-items: center;
-}
 
-.menu {
-    display: none; /* Hide menu by default */
-}
 
 .menu.active {
     display: block; /* Show menu when active */
